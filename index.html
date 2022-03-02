@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="app.js"></script>
+</Head>
+
+
+<body>
+
+    <h1>Simple Javascript Password Generator</h1>
+    <div password-box id="password-box">
+        <div possibleCharactesBox id="PossibleCharactersBox">
+            <form action="/action_page.php">
+                <h1>Choose the types of Characters for the password</h1>
+                <input type="checkbox" id="lowerCase" name="possibleCharacters" value="Lower Case: abcdefghijklmnopqrstuvwxyz" checked>
+                <label for="possibleCharacters"> Lower Case: abcdefghijklmnopqrstuvwxyz</label><br>
+
+                <input type="checkbox" id="uppercase" name="possibleCharacters" value="Upper Case: ABCDEFGHIJKLMNOPQRSTUVWXYZ" checked>
+                <label for="possibleCharacters"> Upper Case: ABCDEFGHIJKLMNOPQRSTUVWXYZ</label><br>
+
+                <input type="checkbox" id="numbers" name="possibleCharacters" value="Numbers: 1234567890" checked>
+                <label for="possibleCharacters"> Numbers: 1234567890</label><br>
+
+                <input type="checkbox" id="symbols" name="possibleCharacters" value="Symbols: ~!@#$%^&*()_+`-={}|:\<>?[]\;\'.," checked>
+                <label for="possibleCharacters"> Symbols: ~!@#$%^&*()_+`-={}|:\"<>?[]\;\'.,</label><br>
+                <br>
+                <!-- <input type="submit" value="Submit"> -->
+              </form>
+        </div>
+        <div charactersToAvoid>
+            <label for="textField">Characters to Avoid:</label>
+            <input type="text" id="charactersToAvoid" name="charactersToAvoid"><br><br>
+        </div>
+        <div lengthOfPassword>
+            <label for="lengthOfPassword">Length of Password:</label>
+            <input type="number" id="lengthOfPassword" name="lengthOfPassword"><br><br>
+        </div>
+        <div numberOfPasswords2Gen>
+
+        </div>
+        <div Button>
+            <button id=generatePasswords onclick="generatePossibleCharacters()">Generage passwords</button>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
