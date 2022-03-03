@@ -15,20 +15,23 @@
         <div possibleCharactesBox id="PossibleCharactersBox">
             <form action="/action_page.php">
                 <h1>Choose the types of Characters for the password</h1>
-                <input type="checkbox" id="lowerCase" name="possibleCharacters" value="Lower Case: abcdefghijklmnopqrstuvwxyz" checked>
+                <input type="checkbox" id="lowerCase" name="possibleCharacters"
+                    value="Lower Case: abcdefghijklmnopqrstuvwxyz" checked>
                 <label for="possibleCharacters"> Lower Case: abcdefghijklmnopqrstuvwxyz</label><br>
 
-                <input type="checkbox" id="uppercase" name="possibleCharacters" value="Upper Case: ABCDEFGHIJKLMNOPQRSTUVWXYZ" checked>
+                <input type="checkbox" id="uppercase" name="possibleCharacters"
+                    value="Upper Case: ABCDEFGHIJKLMNOPQRSTUVWXYZ" checked>
                 <label for="possibleCharacters"> Upper Case: ABCDEFGHIJKLMNOPQRSTUVWXYZ</label><br>
 
                 <input type="checkbox" id="numbers" name="possibleCharacters" value="Numbers: 1234567890" checked>
                 <label for="possibleCharacters"> Numbers: 1234567890</label><br>
 
-                <input type="checkbox" id="symbols" name="possibleCharacters" value="Symbols: ~!@#$%^&*()_+`-={}|:\<>?[]\;\'.," checked>
+                <input type="checkbox" id="symbols" name="possibleCharacters"
+                    value="Symbols: ~!@#$%^&*()_+`-={}|:\<>?[]\;\'.," checked>
                 <label for="possibleCharacters"> Symbols: ~!@#$%^&*()_+`-={}|:\"<>?[]\;\'.,</label><br>
                 <br>
                 <!-- <input type="submit" value="Submit"> -->
-              </form>
+            </form>
         </div>
         <div charactersToAvoid>
             <label for="textField">Characters to Avoid:</label>
@@ -36,16 +39,22 @@
         </div>
         <div lengthOfPassword>
             <label for="lengthOfPassword">Length of Password:</label>
-            <input type="number" id="lengthOfPassword" name="lengthOfPassword"><br><br>
+            <input type="number" id="lengthOfPassword" name="lengthOfPassword" value=8><br><br>
         </div>
         <div numberOfPasswords2Gen>
 
         </div>
         <div Button>
-            <button id=generatePasswords onclick="generatePossibleCharacters()">Generage passwords</button>
+            <button id=generatePasswords onclick="createPassword()">Generage password</button>
         </div>
 
 
+
+    </div>
+    <div>
+        <br><br>
+        
+        <p id="messageOutput" > </p>
 
     </div>
 
