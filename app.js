@@ -49,3 +49,6 @@ function createPassword(){
     messageOutput.innerText = randomPassword
 }
 
+// Future directions: 
+// 1.) Add a copy button to the clipboard
+// 2.) Add letters specifically to use in the password (ex: Use aeiou)
