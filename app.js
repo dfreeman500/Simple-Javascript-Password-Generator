@@ -54,3 +54,5 @@ function createPassword(){
 // 2.) Add letters specifically to use in the password (ex: Use aeiou)
 // 3.) Extend gradient to full browser window
 // 4.) add mobile css 
+// 5.) Add advice for a good password
+// 6.) Add warning for weak password or add password strength indicator
