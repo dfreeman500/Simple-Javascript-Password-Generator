@@ -52,3 +52,5 @@ function createPassword(){
 // Future directions: 
 // 1.) Add a copy button to the clipboard
 // 2.) Add letters specifically to use in the password (ex: Use aeiou)
+// 3.) Extend gradient to full browser window
+// 4.) add mobile css 
