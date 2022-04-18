@@ -11,4 +11,4 @@ This program allows the user to generate a password with the following inputs:
 
 Access the generator at: https://dfreeman500.github.io/Simple-Javascript-Password-Generator/
 
-![ScreenShot](images/js-password-generator.png) 
+![Gif of program](images/Password-Generator.gif) 
