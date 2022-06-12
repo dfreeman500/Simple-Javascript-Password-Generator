@@ -68,9 +68,12 @@ function createPassword() {
 function goodPassword() {
   message = "";
   if (lengthOfPassword < 12) {
-    message += "A strong password should have 12 or more characters";
+    message += "A strong password should have 12 or more characters. ";
+  } else if (document.getElementById("symbols").checked === false) {
+    message += "Adding symbols to a password can make it stronger. ";
   }
 
   //contains letters and numbers
   return message;
 }
+
