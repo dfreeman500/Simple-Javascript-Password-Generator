@@ -52,6 +52,10 @@ function createPassword() {
   messageOutput.innerText = randomPassword;
 }
 
+
+
+
+
 // Future directions:
 // 1.) Add a copy button to the clipboard
 // 2.) Add letters specifically to use in the password (ex: Use aeiou)
@@ -59,3 +63,14 @@ function createPassword() {
 // 4.) add mobile css
 // 5.) Add advice for a good password
 // 6.) Add warning for weak password or add password strength indicator
+
+
+function goodPassword() {
+  message = "";
+  if (lengthOfPassword < 12) {
+    message += "A strong password should have 12 or more characters";
+  }
+
+  //contains letters and numbers
+  return message;
+}
